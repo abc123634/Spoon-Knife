@@ -31,7 +31,38 @@
       -moz-box-shadow: -5px 10px 15px gray;
       font-family: sans-serif;
     }
-    
+
+    span{
+	display: inline-block;
+	-webkit-text-shadow: 1px 1px 20px gray;
+	-moz-text-shadow: 1px 1px 20px gray;   
+	text-shadow: 1px 1px 20px gray;
+	background-color: #00CCFF;
+	color: #fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 2px 2px 3px #ccc;
+	-moz-box-shadow: 2px 2px 3px #ccc;
+	box-shadow: 2px 2px 3px #ccc;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	
+    }
+
+    span:hover{
+	-webkit-box-shadow: 20px 20px 40px #ccc;
+	-moz-box-shadow: 20px 20px 40px #ccc;
+	-ms-box-shadow: 20px 20px 40px #ccc;
+	box-shadow: 20px 20px 40px #ccc;
+	
+	-webkit-transform: scale(1.4);
+	-moz-transform: scale(1.4);
+	-ms-transform:  scale(1.4);
+	transform: scale(1.4);
+
+    }	
   </style>
   <script type="text/javascript">
 	var keyCodes=new Array(10);
@@ -44,16 +75,16 @@
 		}
 	}
 	window.onkeydown=keydownHandler;
-   </script>
-		
+   </script>		
+
 </head>
 
 <body>
 
 <img src="forkit.gif" id="octocat" alt="" />
 
-<p>
-  Fork me? No, fork you!
+<p id="fork">
+  <span>Fork me? No, fork you!</span>
 </p>
 <div id="rainbow-message" style="display:none">
 Double repositories all the way across the sky!<br/>
